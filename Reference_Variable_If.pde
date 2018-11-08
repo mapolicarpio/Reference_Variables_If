@@ -3,16 +3,12 @@ int Y= 50;
 int bounce= 5;
 int Z= 1;
 int i= 1;
-
-
 void setup() {
   size(500, 500);
 }
-
 void draw() {
   background(255);
   frameRate(120);
-
   fill(#F9FC66);
   ellipse(X, Y, 50, 50);
   noFill();
@@ -24,8 +20,6 @@ void draw() {
   arc(X, Y+10, 15, 15, radians(0), radians(180),CHORD);
   fill(0);
   arc(X, Y+10, 15, 15, radians(20), radians(160),CHORD);
-
-  
   fill(#05CFFF);
   ellipse(X-10, Y-5,5,10);
   ellipse(X+10, Y-5,5,10);
